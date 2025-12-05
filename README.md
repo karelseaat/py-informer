@@ -1,13 +1,13 @@
  # Py Informer
-A MicroPython-based ESP32 project for creating access points with dynamic names.
+A MicroPython-based ESP32 project for creating dynamic access points with a web-based configuration interface.
 
 ## Overview
-This repository contains the source code for a MicroPython project that creates access points (APs) on an ESP32 device. The AP name changes dynamically to provide some amusement, but the main purpose of this project is not to connect to the internet.
+This repository contains the source code for a MicroPython project that creates access points (APs) on an ESP32 device. The AP name changes dynamically, providing some amusement, but its primary purpose is to serve as a learning resource rather than connecting to the internet.
 
 ## Components
 The project includes several files:
 
-1. `lib/dnsquery.py` - Contains a DNS query class used by the access point to respond to DNS queries from clients.
+1. `lib/dnsquery.py` - A DNS query class used by the access point to respond to DNS queries from clients.
 2. `schelder-main.py` - Configures the ESP32 device to create an access point and changes its name randomly at regular intervals.
 3. `main.py` - Main script that initializes the AP, establishes a connection to a WiFi network if configuration is provided, and handles MQTT client functionality.
 4. `lib/filehelper.py` - Utility functions for managing files on the ESP32 device.
@@ -24,9 +24,12 @@ To use this project, follow these steps:
 5. Save the configuration, and the ESP32 will connect to your WiFi network and handle MQTT messages if configured.
 
 ## Notes
-- The access point name changes randomly and may contain insults or nonsensical words for entertainment purposes.
+- The access point name changes randomly and may contain nonsensical words or animal parts for entertainment purposes.
 - This project is intended for educational and personal use only. It does not provide any real networking functionality, as the AP created by this project does not connect to the internet.
-- For more information on MicroPython, visit [micropython.org](https://micropython.org/).
+- For more information on MicroPython, visit [the official documentation](https://micropython.org/doc/) or check out the [MicroPython ESP32 documentation](https://docs.micropython.org/en/latest/esp32/index.html).
 
 ## Contributing
-Contributions are welcome! If you find a bug or have an idea for improvement, please open an issue or submit a pull request.
+We welcome contributions! If you find any issues or have suggestions, please open an issue or submit a pull request.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
